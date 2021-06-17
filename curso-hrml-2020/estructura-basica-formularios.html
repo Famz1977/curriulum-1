@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+</head>
+<body>
+    <div>
+        <form action="data.html" method="GET">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name">
+            <button>Enviar formulario</button>
+        </form>
+    </div>
+    <div>
+        <form action="data.html" method="GET">
+            <label for="buscar">Buscar</label>
+            <input type="search" id="buscar">
+        </form>
+    </div>    
+    <div>
+        <form action="">
+            <label for="fono">Teléfono</label>
+            <input type="tel" id="fono">
+        </form> 
+    </div>
+    <div>
+        <form action="">
+            <label for="mail">e-mail</label>
+            <input type="email" id="mail">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <label for="url">Direccion web</label>
+            <input type="url" id="url">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <p>Input de tipo "Color"</p>
+            <label for="color">Indique su color</label>
+            <input type="color" id="color">
+            <p>Input de tipo "Number"</p>
+            <label for="numero">Indique un numero, por favor</label>
+            <input type="number" id="numero">
+            <p>Input de tipo "Range"</p>
+            <label for="rango">Indique su rango</label>
+            <input type="range" step="1" min="0" max="10" id="rango">
+            <p>Input de tipo "Text"</p>
+            <label for="text">Ingrese su mensaje</label>
+            <input type="text" id="text">
+            <p>Input tipo radio</p>
+            <p>Por favor, indique su género</p>
+            <label for="m">Masculino</label>
+            <input type="radio" id="m" name="gender" value="masculino">
+            <label for="f">Femenino</label>
+            <input type="radio" id="f" name="gender" value="femenino">
+            <label for="o">Otro o No contesta</label>
+            <input type="radio" id="o" name="gender" value="otro">
+            <p>Input tipo checkbox</p>
+            <p>Tecnologías web que manejas</p>
+            <label>Html</label>
+            <input type="checkbox" name="languages" value="html" >
+            <label>Css</label>
+            <input type="checkbox" name="languages" value="css" >
+            <label>JavaScript</label>
+            <input type="checkbox" name="languages" value="JS" >
+            <p>Input tipo Select</p>
+            <p>Seleccione de la siguiente lista</p>
+            <select name="webtech" multiple>
+                <option value="http">Html</option>
+                <option value="css">Css</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <br>
+            <select name="mascotas">
+                <optgroup label="Cuadrúpedos">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="conejo">Conejo</option>
+                </optgroup>
+                <optgroup label="Aves">
+                    <option value="loro">Loro</option>
+                    <option value="canario">Canario</option>
+                </optgroup>
+                <optgroup label="Otras">
+                    <option value="serpiente">Serpiente</option>
+                    <option value="tarantula">Trantula</option>
+                </optgroup>
+            </select>
+            <br>
+                <input type="list" list="pets">
+                    <datalist id="pets">
+                        <option value="Perro"></option>
+                        <option value="Gato"></option>
+                        <option value="Hamster"></option>
+                        <option value="Conejo"></option>
+                        <option value="Loro"></option>
+                        <option value="Canario"></option>
+                        <option value="Serpiente"></option>
+                        <option value="Tarantula"></option>
+                    </datalist>
+                    <br>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+                </fieldset>
+                <input type="file">
+                <br>
+                <label for="gas">Combustible</label>
+                <meter id="gas" min="0" max="100" value="75" low="20" high="80" optimum="50"></meter>
+                <br>
+                <label for="task">Tarea 1</label>
+                <progress id="task1" max="100" value="50"></progress>
+                <br>
+                <label for="message"></label>
+                <textarea name="text1" id="message" cols="30" rows="10"></textarea>
+            <p>Input de tipo "Reset"</p>
+            <label for="reset">Presione para resetear los valores</label>
+            <input type="reset" id="reset">
+            
+
+        </form>
+    </div>
+<br>
+<footer>Fin del ejercicio</footer>
+</body>
+</html>
